@@ -5,6 +5,7 @@
 #include "Framework/GameObject.h"
 #include <string>
 #include <iostream>
+#include "Zombie.h"
 
 
 class Level{
@@ -15,6 +16,10 @@ public:
 	void handleInput(float dt);
 	void update(float dt);
 	void render();
+
+	Zombie Zombie;
+	sf::Texture zombTexture;
+
 
 private:
 	// Default functions for rendering to the screen.

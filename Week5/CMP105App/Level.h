@@ -6,7 +6,7 @@
 #include <string>
 #include <iostream>
 #include "Zombie.h"
-
+#include "Mario.h"
 
 class Level{
 public:
@@ -17,9 +17,10 @@ public:
 	void update(float dt);
 	void render();
 
+	Mario Mario;
 	Zombie Zombie;
 	sf::Texture zombTexture;
-
+	sf::Texture marioTexture;
 
 private:
 	// Default functions for rendering to the screen.
